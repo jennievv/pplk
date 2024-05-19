@@ -1,0 +1,40 @@
+.checkbox {
+    margin-bottom: 25px;
+    display: inline-flex;
+    position: relative;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &__input {
+        position: absolute;
+        @include size(0, 0);
+        transform: translateX(-100vw);
+        &:checked ~ .checkbox__state .checkbox__control{
+            background-color: $bg-checkbox;
+            border: 0.5px solid $border-checkbox-checked;
+        }
+    }
+    &__state {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        cursor: pointer;
+    }
+    &__control {
+        @include size(12px, 12px);
+        background-color: $bg-checkbox;
+        border-radius: 3px;
+        border: 0.5px solid $border-checkbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__svg {
+        @include size(12px, 12px);
+    }
+    &__title {
+        font-size: 10px;
+        color: $fc-basic;
+        font-weight: 400;
+    }
+}

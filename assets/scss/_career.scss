@@ -1,0 +1,69 @@
+.career {
+    background-color: $bg-main;
+    &__body {
+        padding: 43px 10px 47px;
+    }
+    &__title {
+        margin-bottom: 35px;
+        color: $fc-title;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+    &__text {
+        color: $fc-basic;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__bottom {}
+    &__svg {
+        position: absolute;
+        @include size(18px, 30px);
+        &_rotate {
+            transform: rotate(180deg); 
+        }
+        &_left {
+            left: 3%;
+        }
+        &_right {
+            right: 3%;
+        }
+    }    
+    &__image {
+        margin-bottom: 15px;
+        width: 340px;
+        position: relative;
+        right: 40px;
+    }
+    &__name {
+        text-align: center;
+        color: $fc-basic;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__about {
+        text-align: center;
+        margin-bottom: 20px;
+        color: $fc-basic;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__list {
+        margin-left: 5px;
+    }
+    &__item {
+        margin: 0 0 20px 20px;
+        color: $fc-basic;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}

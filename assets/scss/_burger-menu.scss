@@ -1,0 +1,9 @@
+.burger-menu {
+    @include size(36px, 36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__svg {
+        @include size(21px, 14px);
+    }
+}

@@ -1,0 +1,19 @@
+.header {
+    background-color: $bg-main;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        @include size(60px, 30px);
+    }
+    &__svg {
+        @include size(60px, 30px);
+    }
+    &__right {}
+    &__text {
+        color: $fc-basic;
+        font-size: 9px;
+    }
+}

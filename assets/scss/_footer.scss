@@ -1,0 +1,68 @@
+.footer {
+    background-color: $bg-main;
+    &__body {
+        padding: 45px 13px 51px;
+    }
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: $fc-title;
+        text-transform: uppercase;
+    }
+    &__preview {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__svg {
+        @include size(32px, 32px);
+        &_medium{
+            @include size(42px, 42px);
+        }
+        &_large{
+            @include size(50px, 50px);
+        }
+    }
+    &__link {
+        color: $fc-basic;
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        &_underline{
+            text-decoration: underline;
+        }
+        &_block{
+            display: block;
+            text-align: center;
+        }
+    }
+    &__line {
+        margin: 42px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+    }
+    &__map {
+        margin-bottom: 42px;
+    }
+    &__text {
+        font-size: 14px;
+        color: $fc-basic;
+        font-weight: 700;
+        text-align: center;
+        &_bottom {
+            margin-bottom: 30px;
+        }
+    }
+    &__logo {
+        margin: 15px auto 0;
+        display: flex;
+    }
+}

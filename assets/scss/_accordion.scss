@@ -1,0 +1,28 @@
+.accordion {
+    &__item{
+        position: relative;
+        padding: 16.5px 20px 13.5px;
+        border-bottom: 3px solid $borderbotc;
+    }
+    &__item[open] &__svg {
+        transform: rotate(45deg);
+    }
+    &__summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        size: 18px;
+        color: $fc-basic;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    &__text {
+        padding-top: 3px;
+        font-size: 18px;
+        color: $fc-basic;
+    }
+    &__svg {
+        margin-left: 15px;
+        @include size(25px, 25px);
+    }
+}

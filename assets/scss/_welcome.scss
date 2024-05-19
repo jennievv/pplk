@@ -1,0 +1,38 @@
+.welcome {
+    min-height: 500px;
+    background-image: url("/assets/img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 75%;
+    &__body {
+        margin: 0 10px;
+        padding: 271px 0 45px;
+    }
+    &__title {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 29px;
+        color: $fc-basic;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-bottom: 35px;
+        text-align: center;
+        font-size: 18px;
+        color: $fc-basic;
+        font-weight: 700;
+    }
+    &__open-form {
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-color: $bgbtn;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 30px;
+        color: $fc-basic;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
